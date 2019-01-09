@@ -18,7 +18,7 @@ var createDict = function () {
   var iframeDocument;
   iframe.style.display = 'none';
   html.appendChild(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
+  iframe.src = ''; // eslint-disable-line no-script-url
   iframeDocument = iframe.contentWindow.document;
   iframeDocument.open();
   iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
